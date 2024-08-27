@@ -53,6 +53,9 @@ const Menu = ({ themeToggler }) => {
         <li>
           <LinkNav to="/contact">{texts.menu.contact}</LinkNav>
         </li>
+        <li>
+          <LinkNav to="/feedback">{texts.menu.contact}</LinkNav>
+        </li>
       </MenuList>
       <StyledSelect onChange={handleLanguageChange} value={language}>
         <option value="es">Español</option>

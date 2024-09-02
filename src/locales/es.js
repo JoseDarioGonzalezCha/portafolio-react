@@ -5,6 +5,7 @@ export const es = {
     projects: "Proyectos",
     contact: "Contacto",
     language: "Idioma",
+    feedback: "Feedback",
   },
   contact: {
     title: "Contactame",

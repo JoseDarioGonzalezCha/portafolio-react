@@ -5,6 +5,7 @@ export const en = {
     projects: "Projects",
     contact: "Contact",
     language: "Language",
+    feedback: "Feedback",
   },
   footer: {
     copyright: "© 2024 My Portfolio. All rights reserve.",

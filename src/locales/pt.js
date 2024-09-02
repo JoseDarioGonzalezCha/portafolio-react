@@ -5,6 +5,7 @@ export const pt = {
     projects: "Projetos",
     contact: "Contato",
     language: "Idioma",
+    feedback: "Feedback",
   },
   contact: {
     title: "Contate-me",

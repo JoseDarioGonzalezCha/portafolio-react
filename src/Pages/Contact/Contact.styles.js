@@ -74,6 +74,7 @@ export const Textarea = styled.textarea`
   border-radius: 4px;
   background-color: ${({ theme }) => theme.inputBackground};
   color: ${({ theme }) => theme.background};
+  resize: none;
   min-height: 150px;
 
   &:focus {

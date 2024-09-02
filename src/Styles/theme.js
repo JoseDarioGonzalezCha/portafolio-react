@@ -1,25 +1,25 @@
 export const lightTheme = {
-  body: "#1C8394", // Fondo principal
-  text: "#000B0D", // Texto oscuro
-  toggleBorder: "#154B52", // Borde del toggle
-  background: "#154B52", // Fondo general
-  menuBackground: "#1C8394", // Fondo del menú
-  accent: "#A52502", // Acentos
-  accentHover: "#390D02", // Acentos al hacer hover
-  link: "#390D02", // Enlaces
-  success: "#1C8394", // Color de éxito
-  error: "#A52502", // Color de error
+  body: "#c0ceca", // Fondo principal claro
+  text: "#263530", // Texto oscuro
+  toggleBorder: "#94744c", // Borde del toggle
+  background: "#c0ceca", // Fondo general claro
+  menuBackground: "#e5ece9", // Fondo del menú ligeramente más claro que el fondo general
+  accent: "#94744c", // Acentos en tonos de oro viejo
+  accentHover: "#735e3b", // Acentos más oscuros al hacer hover
+  link: "#94744c", // Enlaces en tono de oro viejo
+  success: "#263530", // Color de éxito en tono verde oscuro
+  error: "#94744c", // Color de error en tono oro viejo
 };
 
 export const darkTheme = {
-  body: "#000B0D", // Fondo principal oscuro
-  text: "#F0EAD6", // Texto claro
-  toggleBorder: "#390D02", // Borde del toggle oscuro
-  background: "#154B52", // Fondo general oscuro
-  menuBackground: "#000B0D", // Fondo del menú oscuro
-  accent: "#A52502", // Acentos
-  accentHover: "#390D02", // Acentos al hacer hover
-  link: "#1C8394", // Enlaces
-  success: "#154B52", // Color de éxito
-  error: "#A52502", // Color de error
+  body: "#263530", // Fondo principal oscuro
+  text: "#c0ceca", // Texto claro
+  toggleBorder: "#735e3b", // Borde del toggle en tono oro oscuro
+  background: "#263530", // Fondo general oscuro
+  menuBackground: "#1e2722", // Fondo del menú ligeramente más oscuro que el fondo general
+  accent: "#94744c", // Acentos en tono oro viejo
+  accentHover: "#735e3b", // Acentos más oscuros al hacer hover
+  link: "#c0ceca", // Enlaces en tono claro
+  success: "#94744c", // Color de éxito en tono oro viejo
+  error: "#735e3b", // Color de error en tono oro oscuro
 };

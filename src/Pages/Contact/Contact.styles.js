@@ -29,7 +29,7 @@ export const ContactTitle = styled.h1`
 
   span {
     background-color: ${({ theme }) => theme.menuBackground};
-    color: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.accent};
     padding: 0 10px;
     border-radius: 5px;
   }
@@ -85,7 +85,7 @@ export const Textarea = styled.textarea`
 export const Button = styled.button`
   padding: 10px 20px;
   font-size: 16px;
-  color: ${({ theme }) => theme.background};
+  color: ${({ theme }) => theme.accent};
   background-color: ${({ theme }) => theme.menuBackground};
   border: none;
   border-radius: 4px;

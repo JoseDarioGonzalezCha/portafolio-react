@@ -37,7 +37,7 @@ export const WelcomeTitle = styled.h1`
 
   span {
     background-color: ${({ theme }) => theme.menuBackground};
-    color: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.accent};
     padding: 0 10px;
   }
 
@@ -60,7 +60,7 @@ export const ParagraphContainer = styled.div`
 
 export const Highlight = styled.span`
   background-color: ${({ theme }) => theme.menuBackground};
-  color: ${({ theme }) => theme.background};
+  color: ${({ theme }) => theme.accent};
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
 `;

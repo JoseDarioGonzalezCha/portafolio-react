@@ -67,6 +67,10 @@ export const en = {
     ciclo: "Repeat",
     cicloDescription: "Because this is the life you love!",
   },
+  feedback: {
+    title: "What do you think about my portfolio?",
+    description: "I will be attentive to your comments!",
+  },
   cardProject: {
     buttonRepo: "View Repo",
     buttonDeploy: "View Live",

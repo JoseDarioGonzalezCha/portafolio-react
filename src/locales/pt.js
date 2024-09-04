@@ -68,6 +68,10 @@ export const pt = {
     ciclo: "Repita o ciclo",
     cicloDescription: "Porque esta é a vida que você ama!",
   },
+  feedback: {
+    title: "O que você acha do meu portfólio?",
+    description: "Deixe seu comentário!",
+  },
   cardProject: {
     buttonRepo: "Ver Repositorio",
     buttonDeploy: "Ver Projeto",

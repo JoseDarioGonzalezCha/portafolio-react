@@ -67,6 +67,10 @@ export const es = {
     ciclo: "Repite el ciclo",
     cicloDescription: "¡Porque esta es la vida que amas!",
   },
+  feedback: {
+    title: "¿Qué piensas de mi portafolio?",
+    description: "¡Deja tu comentário!",
+  },
   cardProject: {
     buttonRepo: "Ver Repositorio",
     buttonDeploy: "View Proyecto",

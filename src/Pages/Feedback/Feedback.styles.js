@@ -4,12 +4,21 @@ import responsive from "../../Styles/responsive";
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 1rem;
-  margin: 1rem 0;
 
   display: ${({ $isOpen }) => ($isOpen ? "flex" : "none")};
+
+  ${responsive.lg`
+  max-width: 60vw;
+  margin: 0 auto;
+	padding: 2.25rem;
+  `}
+
+  ${responsive.xl`
+  max-width: 60vw;
+  margin: 0 auto;
+	padding: 3.25rem;
+    `}
 `;
 
 export const Container = styled.div`
@@ -85,7 +94,6 @@ export const Textarea = styled.textarea`
   color: ${({ theme }) => theme.background};
   resize: none;
   min-height: 150px;
-  width: 90vw;
 
   &:focus {
     outline: none;
@@ -93,14 +101,35 @@ export const Textarea = styled.textarea`
   }
 
   ${responsive.lg`
-  max-width: 60%;
+  
 	margin: 1rem
 	padding: 2.25rem;
   `}
 
   ${responsive.xl`
-  max-width: 50%;
+  
 	margin: 3rem
 	padding: 3.25rem;
     `}
+`;
+
+export const Input = styled.input`
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid ${({ theme }) => theme.text};
+  border-radius: 4px;
+  background-color: ${({ theme }) => theme.inputBackground};
+  color: ${({ theme }) => theme.background};
+
+  &:focus {
+    outline: none;
+    border-color: ${({ theme }) => theme.accent};
+  }
+`;
+
+export const ErrorMessage = styled.div`
+  color: ${({ theme }) => theme.error};
+  font-size: 0.875em;
+  margin-top: -8px;
+  margin-bottom: 10px;
 `;

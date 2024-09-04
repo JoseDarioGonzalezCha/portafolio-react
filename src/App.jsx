@@ -6,6 +6,7 @@ import AppRoutes from "./routes";
 import { ProjectProvider } from "./contexts/ProjectsContexts";
 import { MessagesProvider } from "./contexts/MessagesContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
+import { FeedbackProvider } from "./contexts/FeebackContext";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -19,9 +20,11 @@ function App() {
       <GlobalStyles />
       <ProjectProvider>
         <MessagesProvider>
-          <LanguageProvider>
-            <AppRoutes themeToggler={themeToggler} />
-          </LanguageProvider>
+          <FeedbackProvider>
+            <LanguageProvider>
+              <AppRoutes themeToggler={themeToggler} />
+            </LanguageProvider>
+          </FeedbackProvider>
         </MessagesProvider>
       </ProjectProvider>
     </ThemeProvider>

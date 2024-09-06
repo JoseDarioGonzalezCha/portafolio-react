@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import {
@@ -10,9 +10,11 @@ import {
   Textarea,
   TitleContainer,
   ErrorMessage,
+  CardContainer,
 } from "./Feedback.styles";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { useFeedbackContect } from "../../contexts/FeebackContext";
+import FeedbackCard from "../../Components/FeedbackCard/FeedbackCard";
 
 const Feedback = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -38,11 +40,20 @@ const Feedback = () => {
         .required(texts.contact.errorMessage)
         .min(10, texts.contact.errorCharacterMessage),
     }),
-    onSubmit: (values, { resetForm }) => {
+    onSubmit: (values) => {
       addFeedback(values);
       setFormSubmitted(true);
     },
   });
+
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
+  useEffect(() => {
+    if (formSubmitted && success) {
+      formik.resetForm();
+      setFormSubmitted(false);
+    }
+  }, [success, formSubmitted, formik]);
 
   return (
     <Container>
@@ -87,16 +98,15 @@ const Feedback = () => {
           {success && <p>{texts.contact.success}</p>}
         </Form>
       </FormContainer>
-      <div>
+      <CardContainer>
         {feedbacks.map((feedback) => (
-          <>
-            <div key={feedback.id}>
-              <p>{feedback.name}</p>
-              <p>{feedback.message}</p>
-            </div>
-          </>
+          <FeedbackCard
+            key={feedback.id}
+            name={feedback.name}
+            message={feedback.message}
+          />
         ))}
-      </div>
+      </CardContainer>
     </Container>
   );
 };

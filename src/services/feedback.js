@@ -23,3 +23,15 @@ export const getMessages = async () => {
     throw error;
   }
 };
+
+export const updateLikes = async (id, newLikeCount) => {
+  try {
+    const response = await api.patch(`/feedback/${id}`, {
+      likeCount: newLikeCount,
+    });
+    return response.data;
+  } catch (error) {
+    console.error("Error al actualizar el número de likes", error);
+    throw error;
+  }
+};

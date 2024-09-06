@@ -133,3 +133,20 @@ export const ErrorMessage = styled.div`
   margin-top: -8px;
   margin-bottom: 10px;
 `;
+
+export const CardContainer = styled.div`
+  ${responsive.md`
+    display: flex;
+    flex-wrap: wrap;
+  `}
+
+  ${responsive.lg`
+    display: flex;
+    flex-wrap: wrap;
+  `}
+
+  ${responsive.xl`
+    display: flex;
+    flex-wrap: wrap;
+    `}
+`;

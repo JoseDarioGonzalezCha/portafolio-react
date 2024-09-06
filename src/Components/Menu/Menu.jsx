@@ -26,6 +26,9 @@ const Menu = ({ themeToggler }) => {
 
   return (
     <MenuContainer>
+      <HamburgerIcon onClick={toggleMenu}>
+        <DehazeIcon />
+      </HamburgerIcon>
       {!isMenuOpen && (
         <>
           <Avatar
@@ -37,9 +40,7 @@ const Menu = ({ themeToggler }) => {
           </ThemeSwitchContainer>
         </>
       )}
-      <HamburgerIcon onClick={toggleMenu}>
-        <DehazeIcon />
-      </HamburgerIcon>
+
       <MenuList $isOpen={isMenuOpen}>
         <li>
           <LinkNav to="/">{texts.menu.home}</LinkNav>

@@ -1,4 +1,3 @@
-// src/pages/Home/Home.jsx
 import {
   HomeContainer,
   ProfileImage,
@@ -6,6 +5,7 @@ import {
   ParagraphContainer,
   Highlight,
 } from "./Home.styles";
+
 import { useLanguage } from "../../contexts/LanguageContext";
 
 const Home = () => {
@@ -18,6 +18,7 @@ const Home = () => {
       index % 2 === 1 ? <Highlight key={index}>{part}</Highlight> : part
     );
   };
+
   return (
     <HomeContainer>
       <WelcomeTitle>
@@ -26,7 +27,7 @@ const Home = () => {
         ))}
       </WelcomeTitle>
       <ProfileImage
-        src="https://via.placeholder.com/300"
+        src="https://avatars.githubusercontent.com/u/75937414?v=4"
         alt="foto portfolio"
       />
       <ParagraphContainer>

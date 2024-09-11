@@ -39,21 +39,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-/* 
- {projects.length < 0 ? (
-        <p>No hay proyectos para mostrar</p>
-      ) : (
-        projects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            title={project.title}
-            subtitle={project.subtitle}
-            imageUrl={project.imageUrl}
-            description={project.description}
-            repoUrl={project.repoUrl}
-            deployUrl={project.deployUrl}
-          />
-        ))
-      )}
- */

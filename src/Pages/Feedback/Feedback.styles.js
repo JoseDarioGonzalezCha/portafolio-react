@@ -135,18 +135,33 @@ export const ErrorMessage = styled.div`
 `;
 
 export const CardContainer = styled.div`
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   ${responsive.md`
+    padding: 2rem 0;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    
   `}
 
   ${responsive.lg`
+    padding: 3rem 0;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    
   `}
 
   ${responsive.xl`
+    padding: 4rem 0;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    `}
+    
+  `}
 `;

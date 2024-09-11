@@ -15,6 +15,8 @@ import {
 import { useLanguage } from "../../contexts/LanguageContext";
 import { useFeedbackContect } from "../../contexts/FeebackContext";
 import FeedbackCard from "../../Components/FeedbackCard/FeedbackCard";
+import { Box } from "@mui/material";
+import CircularProgress from "@mui/material/CircularProgress";
 
 const Feedback = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -99,13 +101,26 @@ const Feedback = () => {
         </Form>
       </FormContainer>
       <CardContainer>
-        {feedbacks.map((feedback) => (
-          <FeedbackCard
-            key={feedback.id}
-            name={feedback.name}
-            message={feedback.message}
-          />
-        ))}
+        {feedbacks.length > 0 ? (
+          feedbacks.map((feedback) => (
+            <FeedbackCard
+              key={feedback.id}
+              name={feedback.name}
+              message={feedback.message}
+            />
+          ))
+        ) : (
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              minHeight: { xs: "50vh", md: "80vh" },
+            }}
+          >
+            <CircularProgress />
+          </Box>
+        )}
       </CardContainer>
     </Container>
   );

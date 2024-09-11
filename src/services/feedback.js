@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://json-server-api-09kw.onrender.com",
+  baseURL: "https://json-server-api-09kw.onrender.com1",
 });
 
 export const sendFeedback = async (feedbackData) => {
